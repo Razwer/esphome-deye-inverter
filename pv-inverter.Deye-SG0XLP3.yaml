@@ -22,10 +22,10 @@ substitutions:
   modbus_inverter_address: "0x01" # Default Modbus address, should be changed to match inverter settings
 
   # Safe Mode parameters for supported inverters
-  safe_mode_delay: 600s # Time after which transition to safe mode and setting default operating parameters will occur
-  default_maximum_battery_charge_current: "140" # Amps
-  default_max_sell_power: "12000" # Watts. Adjust to your inverter
-  default_system_work_mode: "Zero Export To Load" # "Selling First", "Zero Export To Load", "Zero Export To CT"
+  safe_mode_delay: 300s # Time after which transition to safe mode and setting default operating parameters will occur
+  default_maximum_battery_charge_current: "200" # Amps
+  default_max_sell_power: "10000" # Watts. Adjust to your inverter
+  default_system_work_mode: "Zero Export To CT" # "Selling First", "Zero Export To Load", "Zero Export To CT"
   default_solar_sell: "on" # "on", "off"
   default_force_off_grid: "off" # "on", "off"
 
@@ -33,7 +33,7 @@ substitutions:
 
 packages:
   pv_inverter:
-    url: https://github.com/Lewa-Reka/esphome-deye-inverter
+    url: https://github.com/Razwer/esphome-deye-inverter
     refresh: 12h
     files: pv_inverter/deye_hybrid_3p_lv.yaml # SG0XLP3 Low Voltage (3P)
 
@@ -41,7 +41,7 @@ packages:
 esp32:
   board: esp32dev
   framework:
-    type: esp-idf
+    type: arduino
 
 uart:
   # Default TX and RX pins, if TTL converter is connected differently, set appropriate pins
