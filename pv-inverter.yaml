@@ -41,5 +41,5 @@ uart:
 modbus: 
   flow_control_pin: GPIO17 # Uncomment and set appropriate pin if your TTL converter requires it
 
-#logger:
-#  level: VERBOSE # VERBOSE / DEBUG / INFO / WARN
+logger:
+  level: VERBOSE # VERBOSE / DEBUG / INFO / WARN
