@@ -1,4 +1,4 @@
-﻿# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
+# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ esphome:
   comment: "${device_description} by Razwer https://github.com/Razwer/esphome-deye-inverter"
   project:
     name: "razwer.deye-inverter"
-    version: "0.12.0"
+    version: "0.14.0"
 
 logger:
   level: WARN
